@@ -24,7 +24,7 @@ def click_on_button_and_proceed(driver, link, exception_message):
         button = driver.find_element_by_xpath(link)
         button.click()
     except (ElementNotInteractableException, NoSuchElementException):
-        print(exception_message)
+        print(exception_message)  # print exception message
         pass
 
 
